@@ -8,22 +8,18 @@
 .right{
     display: flex;
     flex-direction: column;
-    background-color: antiquewhite;
-    width: 40%;
+    background: linear-gradient(to bottom,#2F6489, #36688A,#3D6B8B,#4C738C,#5A7A8E,#53768D,#627E8E,#69818F,#708590);
+    width: 30%;
     max-height: 100%;
-    padding:1rem;
     gap: 1rem;
 }
 
 .search{
     max-width: 100%;
     height: 40%;
-    background-color: brown;
-    padding: 1rem;
 }
 .details{
     max-width: 100%;
     height: 50%;
-    background-color: rgb(42, 165, 67);
     padding: 1rem;
 }
