@@ -12,11 +12,13 @@ function Input() {
         </div>
         <button onClick={handleButtonClick}>Search</button>
       </div>
-      <div>
-        <p>s</p>
-        <p>s</p>
-        <p>s</p>
-        <p>s</p>
+      <div className={styles.citys}>
+        <div className={styles.border}>
+          <p>s</p>
+          <p>s</p>
+          <p>s</p>
+          <p>s</p>
+        </div>
       </div>
     </div>
   );
