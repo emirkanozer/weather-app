@@ -59,3 +59,15 @@ button{
         cursor: pointer;
     }
 }
+
+.btn{
+    background-color: #323232;
+    img{
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+button:hover{
+    background-color: #404040;
+}

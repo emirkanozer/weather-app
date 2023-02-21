@@ -10,7 +10,9 @@ function Input() {
         <div className={styles.search}>
           <input placeholder="Enter City" ref={inputRef} />
         </div>
-        <button onClick={handleButtonClick}>Search</button>
+        <button className={styles.btn} onClick={handleButtonClick}>
+          <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-search-strong-512.png" />
+        </button>
       </div>
       <div className={styles.citys}>
         <div className={styles.border}>
