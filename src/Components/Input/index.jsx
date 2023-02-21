@@ -11,7 +11,10 @@ function Input() {
           <input placeholder="Enter City" ref={inputRef} />
         </div>
         <button className={styles.btn} onClick={handleButtonClick}>
-          <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-search-strong-512.png" />
+          <img
+            src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-search-strong-512.png"
+            alt="icon"
+          />
         </button>
       </div>
       <div className={styles.citys}>

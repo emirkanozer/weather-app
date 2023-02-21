@@ -17,7 +17,10 @@ const InputContextProvider = ({ children }) => {
   const inputRef = useRef(null);
 
   const handleButtonClick = () => {
-    fetchData(inputRef.current.value);
+    if (inputRef !== "") {
+      fetchData(inputRef.current.value);
+    }
+    alert("city enter");
   };
 
   const fetchData = async (value) => {
