@@ -9,7 +9,42 @@
 }
 
 .msg{
+    width: 100%;
     position: absolute;
     bottom: 0;
-    padding: 2.5rem;
+    height: 50%;
+}
+
+.content{
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+span{
+    color: rgba(255,255,255,0.8);
+    font-weight: 500;
+    font-size: 10em;
+}
+
+h1,h4{
+    color: #fff;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+}
+
+.state{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 64px;
+        height: 64px;
+    }
 }

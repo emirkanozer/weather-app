@@ -11,6 +11,7 @@ body{
 
 .info{
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid rgba(255,255,255,0.25);
@@ -24,8 +25,16 @@ p{
 h4{
     padding: 0;
     margin: 0;
+    font-weight: 500;
 }
 
 .weather{
+    display: flex;
     padding: 1rem 0rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.detail{
+    color: #fff;
 }

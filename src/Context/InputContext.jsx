@@ -4,7 +4,16 @@ import { getWeather } from "../api";
 const InputContext = createContext();
 
 const InputContextProvider = ({ children }) => {
+  const citys = [
+    { city: "Istanbul" },
+    { city: "London" },
+    { city: "Berlin" },
+    { city: "Amsterdam" },
+    { city: "Athens" },
+    { city: "Moscow" },
+  ];
   const [weatherData, setWeatherData] = useState(null);
+  const [location, setLocation] = useState(null);
   const inputRef = useRef(null);
 
   const handleButtonClick = () => {
@@ -14,6 +23,7 @@ const InputContextProvider = ({ children }) => {
   const fetchData = async (value) => {
     const x = await getWeather(value);
     setWeatherData(x.data.current);
+    setLocation(x.data.location);
   };
 
   const values = {
@@ -21,6 +31,8 @@ const InputContextProvider = ({ children }) => {
     fetchData,
     weatherData,
     inputRef,
+    location,
+    citys,
   };
 
   return (

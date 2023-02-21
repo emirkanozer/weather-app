@@ -10,10 +10,10 @@ export const getWeather = async (country) => {
       aqi: "no",
     },
   };
+
   const data = await axios.get(
     `http://api.weatherapi.com/v1/current.json`,
     config
   );
-
   return data;
 };

@@ -2,13 +2,16 @@
     display: flex;
     background-color: rgb(38, 38, 38);
     width: 85vw;
-    height: 65vh;
+    height: 80vh;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
 
 .right{
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to bottom,#2F6489, #36688A,#3D6B8B,#4C738C,#5A7A8E,#53768D,#627E8E,#69818F,#708590);
+    // background-image: linear-gradient(to top, #204871, #13648c, #2575a9, #1397c3, #45b8d3, #5fdcf0);
+    // background-image: linear-gradient(to top, #204871, #13648c, #2575a9);    
+    // background-image: linear-gradient(to bottom, #0c2b46, #0e3a5e, #1d4c73, #1c6e8f, #3c889e, #4f9cb2);
     width: 30%;
     max-height: 100%;
     gap: 1rem;
@@ -16,7 +19,7 @@
 
 .search{
     max-width: 100%;
-    height: 40%;
+    height: 50%;
 }
 .details{
     max-width: 100%;

@@ -43,8 +43,19 @@ button{
     padding: 0rem 2rem;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .border{
+    height: 100%;
     border-bottom: 1px solid rgba(255,255,255,0.25);
+
+    div{
+        padding: 1rem 0rem;
+        width: 100%;
+    }
+    div:hover{
+        color: #fff;
+        cursor: pointer;
+    }
 }

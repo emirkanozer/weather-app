@@ -3,7 +3,7 @@ import { useInput } from "../../Context/InputContext";
 import styles from "./styles.module.scss";
 
 function Input() {
-  const { handleButtonClick, inputRef } = useInput();
+  const { handleButtonClick, inputRef, citys, fetchData } = useInput();
   return (
     <div className={styles.wrapper}>
       <div className={styles.wrapperInput}>
@@ -14,10 +14,18 @@ function Input() {
       </div>
       <div className={styles.citys}>
         <div className={styles.border}>
-          <p>s</p>
-          <p>s</p>
-          <p>s</p>
-          <p>s</p>
+          {citys.map((item, i) => {
+            return (
+              <div
+                key={i}
+                onClick={() => {
+                  fetchData(item.city);
+                }}
+              >
+                {item.city}
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
